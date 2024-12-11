@@ -287,9 +287,6 @@ export const experience: TimelineItem[] = [
   },
 ];
 
-/**
- * Testimonial section
- */
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
@@ -309,9 +306,7 @@ export const testimonial: TestimonialSection = {
     
 };
 
-/**
- * Contact section
- */
+
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
