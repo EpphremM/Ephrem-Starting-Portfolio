@@ -12,8 +12,8 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-// import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 // import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 // import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 // import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
@@ -70,15 +70,15 @@ export const heroData: Hero = {
   name: `I'm Ephrem.`,
   description: (
     <>
-     <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-  I'm a <strong className="text-stone-100">Full Stack Software Engineer</strong> based in Addis Ababa, currently working at 
-  <strong className="text-stone-100">Lamda Tutoring Company</strong>  build modern web applications that 
-  enhance teachers and students benefit.
-</p>
-<p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-  In my free time, you can catch me exploring new coding challenges, working on personal projects, or enjoying 
-  activities like <strong className="text-stone-100">listening music</strong> <strong className="text-stone-100"></strong>.
-</p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I'm a <strong className="text-stone-100">Full Stack Software Engineer</strong> based in Addis Ababa, currently working at
+        <strong className="text-stone-100">Lamda Tutoring Company</strong>  build modern web applications that
+        enhance teachers and students benefit.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        In my free time, you can catch me exploring new coding challenges, working on personal projects, or enjoying
+        activities like <strong className="text-stone-100">listening music</strong> <strong className="text-stone-100"></strong>.
+      </p>
 
     </>
   ),
@@ -104,12 +104,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I’m a fourth-year Software Engineering student interested in programming. I’m particularly interested in backend development, where I enjoy building scalable RESTful APIs, databases, and server-side logic.  My current tech stack includes Node.js, TypeScript and many other backend and frontend frameworks`,
   aboutItems: [
-    {label: 'Location', text: 'Addis Ababa, BC', Icon: MapIcon},
-    {label: 'Age', text: '21', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Ethiopian ', Icon: FlagIcon},
-    {label: 'Interests', text: 'Listening Music', Icon: SparklesIcon},
-    {label: 'Study', text: 'Addis Ababa Science and Technology University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Studing and partime jobs', Icon: BuildingOffice2Icon},
+    { label: 'Location', text: 'Addis Ababa, BC', Icon: MapIcon },
+    { label: 'Age', text: '21', Icon: CalendarIcon },
+    { label: 'Nationality', text: 'Ethiopian ', Icon: FlagIcon },
+    { label: 'Interests', text: 'Listening Music', Icon: SparklesIcon },
+    { label: 'Study', text: 'Addis Ababa Science and Technology University', Icon: AcademicCapIcon },
+    { label: 'Employment', text: 'Studing and partime jobs', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -118,32 +118,42 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 8,
-      },
-      {
-        name: 'Amharic',
-        level: 10,
-      },
-    ],
-  },
-  {
     name: 'Frontend development',
     skills: [
       {
-        name: 'Vue',
+        name: 'Next.js',
         level: 9,
+        description: 'Building SEO-friendly, high-performance SSR and static websites.',
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'React',
+        level: 8,
+        description: 'Building modern, interactive UIs with hooks, state management, and performance optimization.',
+      },
+      {
+        name: 'Vue',
+        level: 9,
+        description: 'Extensive experience in component-based architecture and reactive state management.',
+      },
+      {
+        name: 'Tailwind CSS',
+        level: 9,
+        description: 'Rapidly building modern, responsive layouts with utility-first CSS.',
       },
       {
         name: 'Nuxt',
+        level: 8,
+        description: 'Developing powerful Vue-based applications with seamless SSR/SSG support.',
+      },
+      {
+        name: 'TypeScript',
+        level: 8,
+        description: 'Ensuring code quality and scalability through strong typing and modern features.',
+      },
+      {
+        name: 'Flutter',
         level: 7,
+        description: 'Cross-platform mobile development for high-performance Android and iOS apps.',
       },
     ],
   },
@@ -151,33 +161,90 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
+        name: 'Go',
+        level: 8,
+        description: 'Building high-performance, concurrent microservices and backend systems.',
+      },
+      {
         name: 'Node.js',
-        level: 8,
+        level: 9,
+        description: 'Developing scalable server-side applications and real-time APIs.',
       },
       {
-        name: 'Expres.js',
-        level: 8,
+        name: 'Express.js',
+        level: 9,
+        description: 'Crafting robust RESTful and GraphQL APIs with middleware architectures.',
       },
       {
-        name: 'Prisma',
-        level: 7,
+        name: 'Better Auth',
+        level: 8,
+        description: 'Implementing secure, modern authentication and authorization workflows.',
       },
       {
-        name: 'Typeorm',
+        name: 'Prisma / TypeORM',
         level: 8,
+        description: 'Efficient database modeling and advanced query orchestration.',
       },
     ],
   },
-  
   {
-    name: 'Mobile development',
+    name: 'Databases',
     skills: [
-     
       {
-        name: 'Flutter',
+        name: 'PostgreSQL',
         level: 8,
+        description: 'Relational database design, optimization, and complex data modeling.',
       },
-
+      {
+        name: 'MongoDB',
+        level: 9,
+        description: 'Working with NoSQL schemas for high-availability distributed systems.',
+      },
+      {
+        name: 'Redis',
+        level: 7,
+        description: 'Implementing caching strategies and message brokerage for fast data access.',
+      },
+    ],
+  },
+  {
+    name: 'DevOps / Cloud',
+    skills: [
+      {
+        name: 'Docker',
+        level: 8,
+        description: 'Containerizing applications for consistent deployment environments.',
+      },
+      {
+        name: 'Kubernetes',
+        level: 7,
+        description: 'Orchestrating containerized workloads and managing cluster scalability.',
+      },
+      {
+        name: 'CI/CD',
+        level: 8,
+        description: 'Automating build, test, and deployment pipelines using GitHub Actions.',
+      },
+    ],
+  },
+  {
+    name: 'Tools / Spoken languages',
+    skills: [
+      {
+        name: 'Git / GitHub',
+        level: 9,
+        description: 'Advanced version control and collaborative workflow management.',
+      },
+      {
+        name: 'English',
+        level: 8,
+        description: 'Professional proficiency for international communication and collaboration.',
+      },
+      {
+        name: 'Amharic',
+        level: 10,
+        description: 'Native proficiency for cultural and technical communication.',
+      },
     ],
   },
 ];
@@ -186,72 +253,18 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
-  // {
-  //   title: 'Project title 1',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage1,
-  // },
-  // {
-  //   title: 'Project title 2',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage2,
-  // },
-  // {
-  //   title: 'Project title 3',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage3,
-  // },
-  // {
-  //   title: 'Project title 4',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage4,
-  // },
-  // {
-  //   title: 'Project title 5',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage5,
-  // },
-  // {
-  //   title: 'Project title 6',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage6,
-  // },
-  // {
-  //   title: 'Project title 7',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage7,
-  // },
-  // {
-  //   title: 'Project title 8',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage8,
-  // },
-  // {
-  //   title: 'Project title 9',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage9,
-  // },
-  // {
-  //   title: 'Project title 10',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage10,
-  // },
-  // {
-  //   title: 'Project title 11',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage11,
-  // },
+  {
+    title: 'View Hoteling',
+    description: 'A comprehensive hospitality management solution engineered to modernize operations, maximize revenue, and ensure absolute financial transparency. Designed for the high-pressure environment of hotels and restaurants, the platform serves as a central intelligence hub—connecting front-of-house service directly to back-of-house logistics in real-time. The system transforms traditional, manual hospitality workflows into a streamlined digital ecosystem, automating critical processes such as billing and stock deduction to eliminate revenue leakage and inventory shrinkage.',
+    url: 'https://github.com/EpphremM',
+    image: portfolioImage1,
+  },
+  {
+    title: 'Zion',
+    description: 'A social media marketing tool designed to automate and schedule content for creators and managers. It streamlines automation workflows, allowing users to plan and execute their social media strategy efficiently.',
+    url: 'https://github.com/EpphremM',
+    image: portfolioImage2,
+  },
 ];
 
 
@@ -281,7 +294,7 @@ export const experience: TimelineItem[] = [
     title: 'Full Stack developer at Lamda Tutoring Company',
     content: (
       <p>
-       As a Full Stack Developer at Lamda Tutoring Company, I work on both the frontend and backend of the platform,I have worked on designing and implementing user interfaces, as well as developing server-side logic and database integration. Technology used: Node.js,Express,Postgresql,RESTful APIs,Git
+        As a Full Stack Developer at Lamda Tutoring Company, I work on both the frontend and backend of the platform,I have worked on designing and implementing user interfaces, as well as developing server-side logic and database integration. Technology used: Node.js,Express,Postgresql,RESTful APIs,Git
       </p>
     ),
   },
@@ -290,20 +303,20 @@ export const experience: TimelineItem[] = [
 export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
-      {
-        name: 'Yigermal',
-        text: 'His strong communication skills and collaborative nature stood out throughout the process.',
-      },
-      {
-        name: 'Selomon',
-        text: 'His attention to detail and problem-solving abilities are unmatched.',
-      },
-      {
-        name: 'Adem',
-        text: ' He is a team player and always brings innovative ideas to the table.',
-      },
-    ]
-    
+    {
+      name: 'Yigermal',
+      text: 'His strong communication skills and collaborative nature stood out throughout the process.',
+    },
+    {
+      name: 'Selomon',
+      text: 'His attention to detail and problem-solving abilities are unmatched.',
+    },
+    {
+      name: 'Adem',
+      text: ' He is a team player and always brings innovative ideas to the table.',
+    },
+  ]
+
 };
 
 
@@ -319,17 +332,16 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Addis Ababa, Ethiopia',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      href: 'https://www.google.com/maps/place/Addis+Ababa,+Ethiopia',
     },
     {
       type: ContactType.Instagram,
       text: '@Epphrem',
       href: 'https://www.instagram.com/Epphrem/',
-    },{
-    type: ContactType.Phone,
-    text: '+251938413473',
-  },
+    }, {
+      type: ContactType.Phone,
+      text: '+251938413473',
+    },
     {
       type: ContactType.Github,
       text: 'EpphremM',
@@ -342,7 +354,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/EpphremM'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/EpphremM/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/EppremM/'},
+  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/EpphremM' },
+  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/EpphremM/' },
+  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/EppremM/' },
 ];
