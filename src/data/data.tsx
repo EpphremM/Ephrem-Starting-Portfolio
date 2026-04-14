@@ -12,8 +12,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+// Unused portfolio images removed
 // import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 // import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 // import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
@@ -71,15 +70,11 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Full Stack Software Engineer</strong> based in Addis Ababa, currently working at
-        <strong className="text-stone-100">Lamda Tutoring Company</strong>  build modern web applications that
-        enhance teachers and students benefit.
+        I'm a <strong className="text-stone-100">5th-Year Software Engineering Student</strong> and <strong className="text-stone-100">Full Stack Lead Developer</strong> based in Addis Ababa.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can catch me exploring new coding challenges, working on personal projects, or enjoying
-        activities like <strong className="text-stone-100">listening music</strong> <strong className="text-stone-100"></strong>.
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-neutral-300">
+        Specializing in building high-performance, scalable web applications with <strong className="text-stone-100">Next.js, Go, and Node.js</strong>, while leveraging modern ORMs like <strong className="text-stone-100">Prisma and Drizzle</strong> for robust data management.
       </p>
-
     </>
   ),
   actions: [
@@ -102,14 +97,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I’m a fourth-year Software Engineering student interested in programming. I’m particularly interested in backend development, where I enjoy building scalable RESTful APIs, databases, and server-side logic.  My current tech stack includes Node.js, TypeScript and many other backend and frontend frameworks`,
+  description: `I’m a 5th-year Software Engineering student at AASTU with a deep passion for building scalable, high-performance systems. My expertise spans the entire stack, from crafting interactive frontends with Next.js to engineering robust backend architectures using Go and Node.js. I have a strong focus on absolute financial transparency and operational efficiency, as demonstrated in my work on View Hoteling. I particularly enjoy working with type-safe ORMs like Prisma, Drizzle, and TypeORM to ensure code quality and data integrity.`,
   aboutItems: [
-    { label: 'Location', text: 'Addis Ababa, BC', Icon: MapIcon },
+    { label: 'Location', text: 'Addis Ababa, Ethiopia', Icon: MapIcon },
     { label: 'Age', text: '21', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Ethiopian ', Icon: FlagIcon },
-    { label: 'Interests', text: 'Listening Music', Icon: SparklesIcon },
+    { label: 'Nationality', text: 'Ethiopian', Icon: FlagIcon },
+    { label: 'Interests', text: 'Building Scalable Apps, Music', Icon: SparklesIcon },
     { label: 'Study', text: 'Addis Ababa Science and Technology University', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Studing and partime jobs', Icon: BuildingOffice2Icon },
+    { label: 'Employment', text: 'Lead Developer & Engineering Student', Icon: BuildingOffice2Icon },
   ],
 };
 
@@ -174,6 +169,21 @@ export const skills: SkillGroup[] = [
         name: 'Express.js',
         level: 9,
         description: 'Crafting robust RESTful and GraphQL APIs with middleware architectures.',
+      },
+      {
+        name: 'Prisma',
+        level: 9,
+        description: 'Advanced ORM with high type-safety for complex database schemas.',
+      },
+      {
+        name: 'Drizzle ORM',
+        level: 8,
+        description: 'High-performance TypeScript ORM for scalable applications.',
+      },
+      {
+        name: 'TypeORM',
+        level: 8,
+        description: 'Rich-featured ORM for Node.js and Browser development.',
       },
       {
         name: 'Better Auth',
@@ -252,20 +262,7 @@ export const skills: SkillGroup[] = [
 /**
  * Portfolio section
  */
-export const portfolioItems: PortfolioItem[] = [
-  {
-    title: 'View Hoteling',
-    description: 'A comprehensive hospitality management solution engineered to modernize operations, maximize revenue, and ensure absolute financial transparency. Designed for the high-pressure environment of hotels and restaurants, the platform serves as a central intelligence hub—connecting front-of-house service directly to back-of-house logistics in real-time. The system transforms traditional, manual hospitality workflows into a streamlined digital ecosystem, automating critical processes such as billing and stock deduction to eliminate revenue leakage and inventory shrinkage.',
-    url: 'https://github.com/EpphremM',
-    image: portfolioImage1,
-  },
-  {
-    title: 'Zion',
-    description: 'A social media marketing tool designed to automate and schedule content for creators and managers. It streamlines automation workflows, allowing users to plan and execute their social media strategy efficiently.',
-    url: 'https://github.com/EpphremM',
-    image: portfolioImage2,
-  },
-];
+export const portfolioItems: PortfolioItem[] = [];
 
 
 export const education: TimelineItem[] = [
@@ -279,22 +276,56 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2023 - Augest 2023',
+    date: 'February 2024 - Present',
     location: 'Addis Ababa',
-    title: 'Backend Developer for AASTU Gibigubae',
+    title: 'Lead Developer | View Hoteling',
     content: (
-      <p> I worked on designing and developing backend services, focusing on user management using prisma ORM
-        Technologies used:Node.js,Express,MongoDB,RESTful APIs,Git
-      </p>
+      <div className="flex flex-col gap-y-2 text-neutral-300">
+        <p className="font-semibold text-yellow">Major Enterprise Hospitality Management Solution</p>
+        <p>View Hoteling is a comprehensive hospitality management solution engineered to modernize operations, maximize revenue, and ensure absolute financial transparency. Designed for the high-pressure environment of hotels and restaurants, the platform serves as a central intelligence hub—connecting front-of-house service directly to back-of-house logistics in real-time.</p>
+        <ul className="list-disc pl-5 space-y-1 text-sm">
+          <li>Automated critical processes: billing, stock deduction, and interdepartmental communication.</li>
+          <li>Eliminated revenue leakage, inventory shrinkage, and service latency.</li>
+          <li>Implemented scalable multi-tenant architecture for enterprise-level property management.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    date: 'January 2024 - Present',
+    location: 'Remote',
+    title: 'Software Engineer | Zion AI',
+    content: (
+      <div className="flex flex-col gap-y-2 text-neutral-300">
+        <p className="font-semibold text-yellow">Social Media Marketing Automation Platform</p>
+        <p>Developed a comprehensive social media marketing tool to automate and schedule content for creators and managers. Focused on creating a streamlined digital ecosystem for automation on social platforms.</p>
+        <ul className="list-disc pl-5 space-y-1 text-sm">
+          <li>Built advanced scheduling algorithms for content automation.</li>
+          <li>Integrated analytics for content creators to monitor engagement.</li>
+          <li>Engineered a sleek, responsive dashboard for campaign management.</li>
+        </ul>
+      </div>
     ),
   },
   {
     date: 'September 2024 - Present',
     location: 'Addis Ababa',
-    title: 'Full Stack developer at Lamda Tutoring Company',
+    title: 'Full Stack Developer @ Lamda Tutoring Company',
     content: (
-      <p>
-        As a Full Stack Developer at Lamda Tutoring Company, I work on both the frontend and backend of the platform,I have worked on designing and implementing user interfaces, as well as developing server-side logic and database integration. Technology used: Node.js,Express,Postgresql,RESTful APIs,Git
+      <p className="text-neutral-300">
+        Working on the end-to-end development of the tutoring platform interface and server-side logic.
+        Focus: User interfaces, database integration (PostgreSQL), and complex RESTful APIs.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2023 - August 2023',
+    location: 'Addis Ababa',
+    title: 'Backend Developer @ AASTU Gibigubae',
+    content: (
+      <p className="text-neutral-300">
+        Designed and developed backend services focusing on user management using Prisma ORM.
+        Technologies: Node.js, Express, MongoDB, RESTful APIs, Git.
       </p>
     ),
   },
@@ -332,6 +363,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
+      text: 'Addis Ababa, Ethiopia',
       href: 'https://www.google.com/maps/place/Addis+Ababa,+Ethiopia',
     },
     {
