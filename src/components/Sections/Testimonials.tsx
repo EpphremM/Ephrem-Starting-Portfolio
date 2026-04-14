@@ -70,7 +70,7 @@ const Testimonials: FC = memo(() => {
   }
 
   return (
-    <Section noPadding sectionId={SectionId.Testimonials} className="bg-zinc-950">
+    <Section className="bg-zinc-950" noPadding sectionId={SectionId.Testimonials}>
       <div
         className={classNames(
           'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8',

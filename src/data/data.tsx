@@ -99,12 +99,12 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I’m a 5th-year Software Engineering student at AASTU with a deep passion for building scalable, high-performance systems. My expertise spans the entire stack, from crafting interactive frontends with Next.js to engineering robust backend architectures using Go and Node.js. I have a strong focus on absolute financial transparency and operational efficiency, as demonstrated in my work on View Hoteling. I particularly enjoy working with type-safe ORMs like Prisma, Drizzle, and TypeORM to ensure code quality and data integrity.`,
   aboutItems: [
-    { label: 'Location', text: 'Addis Ababa, Ethiopia', Icon: MapIcon },
-    { label: 'Age', text: '21', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Ethiopian', Icon: FlagIcon },
-    { label: 'Interests', text: 'Building Scalable Apps, Music', Icon: SparklesIcon },
-    { label: 'Study', text: 'Addis Ababa Science and Technology University', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Lead Developer & Engineering Student', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Addis Ababa, Ethiopia', Icon: MapIcon},
+    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Ethiopian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Building Scalable Apps, Music', Icon: SparklesIcon},
+    {label: 'Study', text: 'Addis Ababa Science and Technology University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Lead Developer & Engineering Student', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -386,7 +386,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/EpphremM' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/EpphremM/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/EppremM/' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/EpphremM'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/EpphremM/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/EppremM/'},
 ];
